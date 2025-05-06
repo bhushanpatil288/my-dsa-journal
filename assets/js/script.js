@@ -1,3 +1,19 @@
+// active btn start
+
+// let filter_btns = document.querySelectorAll(".btn-1");
+let filter_buttons = document.querySelectorAll(".btn-1");
+filter_buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        filter_buttons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+        button.classList.add("active");
+    });
+});
+
+
+// active btn end
+
 // theme toggle start
 
 const themeToggleBtn = document.getElementById("themeToggle");

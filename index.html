@@ -17,7 +17,7 @@
 <body class="ubuntu-mono my-text-body my-bg-black">
     <!-- header start -->
     <header>
-        <div class="container mt-4 container-border">
+        <div class="container mt-4 container-border d-flex flex-column align-items-center">
             <h1 class="text-center my-text-heading">Hello 😀👋! This is Bhushan's DSA journal</h1>
             <p class="text-center">
                 <span class="fw-bold text-capitalize">Short intro 🧠💻:</span> I’m currently learning Full-Stack Development and diving deep into DSA — this journal is a fun way to log both! 📘🚀
@@ -31,8 +31,7 @@
                 <p class="text-center m-0">Perfect if you're astigmatic like me! 😊🧑‍💻</p>
             </div>
         </div>
-        
-              
+    
         </div>
     </header>
     <!-- header end -->
@@ -46,7 +45,7 @@
                 <button class="btn-1 filter-btn" data-filter="linkedlist">🔗 Linked List</button> -->
 
                 <button class="btn-1 filter-btn" data-filter="all">🌍 Show All</button>
-                <button class="btn-1 filter-btn" data-filter="basic">🔁 basic</button>
+                <button class="btn-1 filter-btn active" data-filter="basic">🔁 basic</button>
                 <button class="btn-1 filter-btn" data-filter="arrays">📦 COMING SOON</button>
                 <button class="btn-1 filter-btn" data-filter="linkedlist">🔗 COMING SOON</button>
             </div>
@@ -66,11 +65,36 @@
                 <p>🔗 Built a singly linked list from scratch.</p>
             </div> -->
 
-            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-day="1">
-                <h3 class="text-warning">Day 1: DSA Intro</h3>
+            <!-- primary - Easy Peazy -->
+            <!-- warning - little hard -->
+            <!-- danger - too hard -->
+            <!-- <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-day="1">
+                <h3 class="text-primary">Day 1: DSA Intro</h3>
                 <p>🧠 Learned The Meaning of Data Structures and Algorithms.</p>
                 <p>click here 👉 to download intro <a href="yet-to-provide">ppt</a></p>
+            </div> -->
+
+            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-day="1">
+                <h3 class="text-primary">Day 1: DSA Intro</h3>
+                <p>🧠 Learned The Meaning of Data Structures and Algorithms.</p>
+            
+                <!-- Collapsible trigger -->
+                <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#dsaIntro" aria-expanded="false" aria-controls="dsaIntro">
+                    📖 Show More
+                </button>
+            
+                <!-- Collapsible content -->
+                <div class="collapse mt-3" id="dsaIntro">
+                    <div class="card card-body my-bg-black my-text-body border border-warning">
+                        <strong>Data Structures:</strong> Organized ways to store and manage data efficiently (e.g., arrays, stacks, queues, trees).<br><br>
+                        <strong>Algorithms:</strong> Step-by-step procedures or formulas for solving problems (e.g., sorting, searching, pathfinding).<br><br>
+                        Together, they form the backbone of efficient coding and problem-solving! 🧩💡
+                    </div>
+                </div>
+            
+                <p class="mt-3">Click here 👉 to download intro <a href="yet-to-provide">ppt</a></p>
             </div>
+            
             
             <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="arrays" data-day="2">
                 <h3 class="text-success">Day 2: COMING SOON</h3>
@@ -78,7 +102,7 @@
             </div>
             
             <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="linkedlist" data-day="3">
-                <h3 class="text-primary">Day 3: COMING SOON</h3>
+                <h3 class="text-warning">Day 3: COMING SOON</h3>
                 <p>🔗 COMING SOON</p>
             </div>
         </section>
@@ -89,6 +113,16 @@
     <footer>
 
     </footer>
+    <!-- me -->
+    <div class="position-fixed me-parent" data-bs-toggle="tooltip" data-bs-placement="top" title="That's me! Your DSA companion 👾">
+        <a href="https://github.com/bhushanpatil288">
+            <img src="./assets/images/bhushan-anime.png"
+                 alt="Anime Style Bhushan"
+                 class="img-fluid rounded me"
+                 style="max-width: 70px;  transition: transform 0.3s ease-in-out;">
+        </a>
+    </div>
+    <!-- me end -->
     <!-- footer end -->
 
     <!-- js -->
