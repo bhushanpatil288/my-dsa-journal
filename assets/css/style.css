@@ -1,12 +1,18 @@
 /* header start */
 
-/* me simply means my image */
-/* .me:hover{
-    transform: scale(1.05) rotate(-1deg);
-    filter: drop-shadow(10px 10px 10px 10px blue);
-} */
-
-
-
 
 /* header end */
+
+/* main  start */
+
+.difficulty .btn {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.difficulty .btn:hover {
+    transform: scale(1.05);
+}
+
+
+/* main end */

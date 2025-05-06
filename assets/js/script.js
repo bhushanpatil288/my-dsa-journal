@@ -36,24 +36,37 @@ themeToggleBtn.addEventListener("click", () => {
 
 // filter gallery start
 
-const filterButtons = document.querySelectorAll('.filter-btn');
-const entries = document.querySelectorAll('.dsa-entry');
+const filterButtons = document.querySelectorAll(".filter-btn");
+const entries = document.querySelectorAll(".dsa-entry");
 
 filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const selected = button.getAttribute('data-filter');
+    button.addEventListener("click", () => {
+        // Remove active from all buttons and add to clicked one
+        filterButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
 
-    entries.forEach(entry => {
-      const topic = entry.getAttribute('data-topic');
+        const filterValue = button.getAttribute("data-filter");
 
-      if (selected === 'all' || selected === topic) {
-        entry.style.display = 'block';
-        entry.classList.add('fade-in');
-      } else {
-        entry.style.display = 'none';
-      }
+        entries.forEach(entry => {
+            const topic = entry.getAttribute("data-topic");
+            const difficulty = entry.getAttribute("data-difficulty");
+
+            const match = filterValue === "all" || topic === filterValue || difficulty === filterValue;
+
+            if (match) {
+                entry.style.display = "block";
+
+                // Trigger fade-in
+                entry.classList.remove("fade-in");
+                void entry.offsetWidth; // force reflow
+                entry.classList.add("fade-in");
+            } else {
+                entry.style.display = "none";
+            }
+        });
     });
-  });
 });
+
+
 
 // filter gallery end

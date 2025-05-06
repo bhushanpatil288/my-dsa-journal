@@ -17,18 +17,20 @@
 <body class="ubuntu-mono my-text-body my-bg-black">
     <!-- header start -->
     <header>
-        <div class="container mt-4 container-border d-flex flex-column align-items-center">
-            <h1 class="text-center my-text-heading">Hello 😀👋! This is Bhushan's DSA journal</h1>
-            <p class="text-center">
-                <span class="fw-bold text-capitalize">Short intro 🧠💻:</span> I’m currently learning Full-Stack Development and diving deep into DSA — this journal is a fun way to log both! 📘🚀
-            </p>
-            <div class="d-flex align-items-center justify-content-center flex-wrap gap-2 mt-3">
-                <p class="text-center m-0">Having trouble with eye strain? 👁️😵‍💫</p>
-                <p class="text-center m-0">Here’s a theme switch 👉</p>
-                <div class="text-end">
-                    <button class="btn-1" id="themeToggle">🌞</button>
+        <div class="container mt-4 d-flex flex-column align-items-center">
+            <div class="container container-border">
+                <h1 class="text-center my-text-heading">Hello 😀👋! This is Bhushan's DSA journal</h1>
+                <p class="text-center">
+                    <span class="fw-bold text-capitalize">Short intro 🧠💻:</span> I’m currently learning Full-Stack Development and diving deep into DSA — this journal is a fun way to log both! 📘🚀
+                </p>
+                <div class="d-flex align-items-center justify-content-center flex-wrap gap-2 mt-3">
+                    <p class="text-center m-0">Having trouble with eye strain? 👁️😵‍💫</p>
+                    <p class="text-center m-0">Here’s a theme switch 👉</p>
+                    <div class="text-end">
+                        <button class="btn-2" id="themeToggle">🌞</button>
+                    </div>
+                    <p class="text-center m-0">Perfect if you're astigmatic like me! 😊🧑‍💻</p>
                 </div>
-                <p class="text-center m-0">Perfect if you're astigmatic like me! 😊🧑‍💻</p>
             </div>
         </div>
     
@@ -37,15 +39,16 @@
     <!-- header end -->
     <!-- main start -->
     <main>
-        <section class="container mt-5">
-            <div class="text-center mb-3">
+        <section class="container mt-5 overflow-hidden">
+            <h2 class="text-center my-text-heading">Based on Topic</h2>
+            <div class="text-center mb-3 btn-group d-flex flex-wrap justify-content-center">
                 <!-- <button class="btn-1 filter-btn" data-filter="all">🌍 Show All</button>
                 <button class="btn-1 filter-btn" data-filter="recursion">🔁 basic</button>
                 <button class="btn-1 filter-btn" data-filter="arrays">📦 Arrays</button>
                 <button class="btn-1 filter-btn" data-filter="linkedlist">🔗 Linked List</button> -->
 
                 <button class="btn-1 filter-btn" data-filter="all">🌍 Show All</button>
-                <button class="btn-1 filter-btn active" data-filter="basic">🔁 basic</button>
+                <button class="btn-1 filter-btn" data-filter="basic">🔁 basic</button>
                 <button class="btn-1 filter-btn" data-filter="arrays">📦 COMING SOON</button>
                 <button class="btn-1 filter-btn" data-filter="linkedlist">🔗 COMING SOON</button>
             </div>
@@ -73,8 +76,14 @@
                 <p>🧠 Learned The Meaning of Data Structures and Algorithms.</p>
                 <p>click here 👉 to download intro <a href="yet-to-provide">ppt</a></p>
             </div> -->
+            <h2 class="text-center my-text-heading">Based on Difficulty</h2>
+            <div class="btn-group difficulty d-flex justify-content-center mb-3 flex-wrap">
+                <div class="btn btn-primary filter-btn" data-filter="easy">Easy</div>
+                <div class="btn btn-warning filter-btn" data-filter="medium">Medium</div>
+                <div class="btn btn-danger filter-btn" data-filter="hard">Hard</div>
+            </div>            
 
-            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-day="1">
+            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-difficulty="easy" data-day="1">
                 <h3 class="text-primary">Day 1: DSA Intro</h3>
                 <p>🧠 Learned The Meaning of Data Structures and Algorithms.</p>
             
@@ -96,12 +105,12 @@
             </div>
             
             
-            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="arrays" data-day="2">
+            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="arrays" data-difficulty="hard" data-day="2">
                 <h3 class="text-success">Day 2: COMING SOON</h3>
                 <p>🧩 COMING SOON</p>
             </div>
             
-            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="linkedlist" data-day="3">
+            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="linkedlist" data-difficulty="medium" data-day="3">
                 <h3 class="text-warning">Day 3: COMING SOON</h3>
                 <p>🔗 COMING SOON</p>
             </div>
