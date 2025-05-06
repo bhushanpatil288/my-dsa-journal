@@ -10,17 +10,21 @@
 }
 
 .light-theme {
-    --bg-clr: #fdf6e3;          /* Soft cream background */
-    --accent: #268bd2;          /* Soft blue */
-    --heading: #657b83;         /* Muted dark gray-blue */
-    --text-body: #586e75;       /* Muted base text */
-    --border: #eee8d5;          /* Light border */
-    --btn-bg: #eee8d5;          /* Light beige button */
-    --btn-hover: #268bd2;       /* Soft hover blue */
-    --btn-text: #073642;        /* Deep readable blue */
+    --bg-clr: #fdf6e3;         
+    --accent: #268bd2;          
+    --heading: #657b83;        
+    --text-body: #586e75;       
+    --border: #eee8d5;         
+    --btn-bg: #eee8d5;       
+    --btn-hover: #268bd2;       
+    --btn-text: #073642;        
 }  
 
 /* background */
+* {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 .my-bg-black{
     background: var(--bg-clr);
 }
@@ -83,6 +87,29 @@
 }
 .light-theme .container-border {
     border: 2px solid var(--border);
-    background-color: #fefcf5; /* Softer contrast than background */
+    background-color: #fefcf5;
 }
+.card-border{
+    padding: 20px;
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+}
+.light-theme .card-border {
+    border: 2px solid var(--border);
+    background-color: #fefcf5; 
+}
+  
+
+/* filter gallery */
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+  
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* filter gallery end */
   
