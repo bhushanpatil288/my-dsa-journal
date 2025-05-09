@@ -40,6 +40,7 @@
     <!-- main start -->
     <main>
         <section class="container mt-5 overflow-hidden">
+            <!-- FILTER START -->
             <h2 class="text-center my-text-heading">Based on Topic</h2>
             <div class="text-center mb-3 btn-group d-flex flex-wrap justify-content-center">
                 <button class="btn-1 filter-btn" data-filter="all">🌍 Show All</button>
@@ -53,8 +54,10 @@
                 <div class="btn btn-primary filter-btn" data-filter="easy">Easy</div>
                 <div class="btn btn-warning filter-btn" data-filter="medium">Medium</div>
                 <div class="btn btn-danger filter-btn" data-filter="hard">Hard</div>
-            </div>            
+            </div>     
+            <!-- FILTERS END  -->
 
+            <!-- main content start -->
             <!-- day-1 -->
             <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-difficulty="easy" data-day="1">
                 <h3 class="text-primary">Day 1: DSA Intro</h3>
@@ -62,7 +65,7 @@
             
                 <!-- Collapsible trigger -->
                 <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#dsaIntro" aria-expanded="false" aria-controls="dsaIntro">
-                    📖 Show More
+                    📘 Show More
                 </button>
             
                 <!-- Collapsible content -->
@@ -86,7 +89,7 @@
             
                 <!-- Collapsible trigger -->
                 <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#programmingIntro" aria-expanded="false" aria-controls="programmingIntro">
-                    📖 Show More
+                    📘 Show More
                 </button>
             
                 <!-- Collapsible content -->
@@ -117,43 +120,79 @@
                 <p class="mt-3">Click here 👉 to download Programming Intro (by RNW) <a href="./assets/downloadable-content/pdf/2.what-is-programming.pdf">PDF</a></p>
             </div>
             <!-- day-3 -->
-            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-difficulty="easy" data-day="2">
-                <h3 class="text-primary">Day 3: C++ Setup & First Code</h3>
-                <p>🧠 Learned how to install a C++ compiler, configure environment variables, and write your first C++ program.</p>
-            
-                <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#cppDay2" aria-expanded="false" aria-controls="cppDay2">
-                    📖 Show More
-                </button>
-            
-                <div class="collapse mt-3" id="cppDay2">
-                    <div class="card card-body my-bg-black my-text-body border border-warning">
-                        <ul>
-                            <li>⚙️ Installed C++ compiler & extensions like <code>C/C++</code> and <code>ErrorLens</code>.</li>
-                            <li>🧩 <code>#include &lt;iostream&gt;</code> includes basic I/O functionalities.</li>
-                            <li>📝 <code>int main() { return 0; }</code> — entry point of the program.</li>
-                            <li>🗨️ <code>std::cout</code> is used to print to console using <code>&lt;&lt;</code> (insertion operator).</li>
-                            <li>🖥️ To run: <code>g++ code.cpp</code> → <code>./a.exe</code></li>
-                            <li>📌 <code>using namespace std;</code> lets you skip writing <code>std::</code> again and again.</li>
-                        </ul>
+            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-difficulty="easy" data-day="3">
+                <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-difficulty="easy" data-day="3">
+                    <h3 class="text-primary">Day 3: C++ Setup & First Code</h3>
+                    <p>🧠 Learned how to install a C++ compiler, configure environment variables, and write your first C++ program.</p>
+                
+                    <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#cppDay2" aria-expanded="false" aria-controls="cppDay2">
+                        📘 Show More
+                    </button>
+                
+                    <div class="collapse mt-3" id="cppDay2">
+                        <div class="card card-body my-bg-black my-text-body border border-warning">
+                            <ul>
+                                <li>⚙️ Installed C++ compiler & extensions like <code>C/C++</code> and <code>ErrorLens</code>.</li>
+                                <li>🧩 <code>#include &lt;iostream&gt;</code> includes basic I/O functionalities.</li>
+                                <li>📝 <code>int main() { return 0; }</code> — entry point of the program.</li>
+                                <li>🗨️ <code>std::cout</code> is used to print to console using <code>&lt;&lt;</code> (insertion operator).</li>
+                                <li>🖥️ To run: <code>g++ code.cpp</code> → <code>./a.exe</code></li>
+                                <li>📌 <code>using namespace std;</code> lets you skip writing <code>std::</code> again and again.</li>
+                            </ul>
+                        </div>
                     </div>
+                
+                    <p class="mt-3">Click here 👉 to download C++ Intro (by me) <a href="./assets/downloadable-content/pdf/3.Day 3: Introduction to C++ Programming.pdf" target="_blank">PDF</a></p>
                 </div>
-            
-                <p class="mt-3">Click here 👉 to download C++ Intro (by me) <a href="./assets/downloadable-content/pdf/3.Day 3: Introduction to C++ Programming.pdf" target="_blank">PDF</a></p>
+                <!-- day 3 & 4 -->
+                <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-difficulty="easy" data-day="4">
+                    <h3 class="text-primary">Day 4: Variables & Data Types</h3>
+                    <p>🔢 Learned about data types, variables, escape sequences, and constants in C++.</p>
+                
+                    <!-- Collapsible trigger -->
+                    <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#cppDay3" aria-expanded="false" aria-controls="cppDay3">
+                        📘 Show More
+                    </button>
+                
+                    <!-- Collapsible content -->
+                    <div class="collapse mt-3" id="cppDay3">
+                        <div class="card card-body my-bg-black my-text-body border border-warning">
+                            <strong>🔹 Data Types:</strong> Define the kind of data stored in variables. Examples:<br>
+                            - <code>int</code>: whole numbers<br>
+                            - <code>float</code>: floating point numbers<br>
+                            - <code>char</code>: single characters<br>
+                            - <code>string</code>: text<br>
+                            - <code>bool</code>: true or false (0 or 1)<br><br>
+                
+                            <strong>📏 Check Size:</strong> Use <code>sizeof()</code> to check how much memory a variable uses.<br><br>
+                
+                            <strong>🔠 Modifiers:</strong> Use <code>long</code> to increase size, <code>double</code> for more precision than float.<br><br>
+                
+                            <strong>🧾 Constants:</strong> Use <code>const</code> or <code>#define</code> for fixed values like PI.<br><br>
+                
+                            <strong>🧪 Escape Sequences:</strong> <code>\n</code> for new line, <code>\t</code> for tab.<br>
+                            <code>endl</code> can also be used to end a line.
+                        </div>
+                    </div>
+                
+                    <p class="mt-3">Click here 👉 to download C++ Variables (by me) <a href="./assets/downloadable-content/word/3.Day-4:CPP_Variables.docx">Word File</a></p>
+                </div>
+                <p class="mt-3">Click here 👉 to download C++ setup, first code & Variables (by RNW) <a href="./assets/downloadable-content/pdf/3.Day4:c++ setup & variables.pdf">PDF</a></p>
+
             </div>
             
             
-            
-            
-            
+            <!-- unused yet -->
             <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="arrays" data-difficulty="hard" data-day="2">
-                <h3 class="text-success">Day 2: COMING SOON</h3>
+                <h3 class="text-success">COMING SOON</h3>
                 <p>🧩 COMING SOON</p>
             </div>
             
             <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="linkedlist" data-difficulty="medium" data-day="3">
-                <h3 class="text-warning">Day 3: COMING SOON</h3>
+                <h3 class="text-warning">COMING SOON</h3>
                 <p>🔗 COMING SOON</p>
             </div>
+            <!-- main content end -->
         </section>
 
     </main>
