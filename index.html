@@ -45,6 +45,7 @@
             <div class="text-center mb-3 btn-group d-flex flex-wrap justify-content-center">
                 <button class="btn-1 filter-btn" data-filter="all">🌍 Show All</button>
                 <button class="btn-1 filter-btn" data-filter="basic">🔁 basics</button>
+                <button class="btn-1 filter-btn" data-filter="cpp"> &lt;/&gt; ⚙️ C++</button>
                 <button class="btn-1 filter-btn" data-filter="tools">💾 Tools</button>
                 <button class="btn-1 filter-btn" data-filter="arrays">📦 COMING SOON</button>
                 <button class="btn-1 filter-btn" data-filter="linkedlist">🔗 COMING SOON</button>
@@ -84,7 +85,7 @@
                 <p class="mt-3">Click here 👉 to download DSA intro (by RNW) <a href="./assets/downloadable-content/pdf/1.dsa-intro.pdf">PDF</a></p>
             </div>
             <!-- day-2 -->
-            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-difficulty="easy" data-day="2">
+            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic cpp" data-difficulty="easy" data-day="2">
                 <h3 class="text-primary">Day 2: Programming Intro</h3>
                 <p>💻 Understood what programming is and explored the history and importance of C++.</p>
             
@@ -121,8 +122,8 @@
                 <p class="mt-3">Click here 👉 to download Programming Intro (by RNW) <a href="./assets/downloadable-content/pdf/2.what-is-programming.pdf">PDF</a></p>
             </div>
             <!-- day-3 & 4 -->
-            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-difficulty="easy" data-day="3">
-                <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-difficulty="easy" data-day="3">
+            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic cpp" data-difficulty="easy" data-day="3">
+                <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic cpp" data-difficulty="easy" data-day="3">
                     <h3 class="text-primary">Day 3: C++ Setup & First Code</h3>
                     <p>🧠 Learned how to install a C++ compiler, configure environment variables, and write your first C++ program.</p>
                 
@@ -155,7 +156,7 @@
                     <p class="mt-3">Click here 👉 to download C++ Intro (by me) <a href="./assets/downloadable-content/pdf/3.Day 3: Introduction to C++ Programming.pdf" target="_blank">PDF</a></p>
                 </div>
                 <!-- day 3 & 4 -->
-                <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-difficulty="easy" data-day="4">
+                <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic cpp" data-difficulty="easy" data-day="4">
                     <h3 class="text-primary">Day 4: Variables & Data Types</h3>
                     <p>🔢 Learned about data types, variables, escape sequences, and constants in C++.</p>
                 
@@ -236,9 +237,63 @@
                     </div>
                 </div>
             
-                <p class="mt-3">Click here 👉 to download C++ setup, first code & Variables (by RNW) <a href="./assets/downloadable-content/pdf/4.Day-5-GitHub.pdf">PDF</a></p>
+                <p class="mt-3">Click here 👉 to download Git & GitHub basics (by RNW) <a href="./assets/downloadable-content/pdf/4.Day-5-GitHub.pdf">PDF</a></p>
             </div>
-            
+            <!-- day-6 -->
+            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="cpp" data-difficulty="easy" data-day="cpp-operators">
+                <h3 class="text-primary">Day 6:⚙️ C++ Operators & Type Conversion</h3>
+                <p>Learn about different operators in C++ and how type conversion works.</p>
+
+                <!-- Collapsible trigger -->
+                <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#cppOperators" aria-expanded="false" aria-controls="cppOperators">
+                    📘 Show More
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse mt-3" id="cppOperators">
+                    <div class="card card-body my-bg-black my-text-body border border-warning">
+
+                    <strong>🧮 Types of Operators:</strong><br>
+                    <ul>
+                        <li><b>Arithmetic</b>: +, -, *, /, %</li>
+                        <li><b>Relational</b>: ==, !=, &gt;, &lt;, &gt;=, &lt;=</li>
+                        <li><b>Logical</b>: &&, ||, !</li>
+                        <li><b>Assignment</b>: =, +=, -=, *=, /=</li>
+                        <li><b>Unary</b>: ++, -- (prefix/postfix)</li>
+                        <li><b>Miscellaneous</b>: sizeof(), comma operator etc.</li>
+                    </ul>
+
+                    <hr>
+
+                    <strong>🔢 Operator Precedence:</strong><br>
+                    - Some operators are executed before others in an expression.<br>
+                    - Example: <code>int x = 5 + 2 * 3;</code> → Multiplication runs first.<br>
+                    - Use <code>()</code> to control order.<br>
+
+                    <hr>
+
+                    <strong>🔁 Type Conversion:</strong><br>
+                    - Converting a value from one data type to another.<br><br>
+
+                    <u>🔸 Implicit Conversion:</u><br>
+                    - Done automatically by the compiler.<br>
+                    - Example: <code>int + float</code> → int converts to float<br><br>
+
+                    <u>🔹 Explicit Conversion (Type Casting):</u><br>
+                    - Done manually by programmer.<br>
+                    - Example: <code>(int)3.14</code> → becomes 3<br>
+
+                    </div>
+                </div>
+
+                <p class="mt-3">📌 Master these early for stronger logic and cleaner code!</p>
+                <p class="">Click here 👉 to download operators & Type conversion (by RNW) <a href="./assets/downloadable-content/pdf/5.Day-6-operators&type-conversion.pdf">PDF</a></p>
+
+            </div>
+            <div class="row">
+
+            </div>
+
             
             
             <!-- unused yet -->

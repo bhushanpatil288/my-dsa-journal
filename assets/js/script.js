@@ -35,28 +35,31 @@ themeToggleBtn.addEventListener("click", () => {
 
 
 // filter gallery start
-
 const filterButtons = document.querySelectorAll(".filter-btn");
 const entries = document.querySelectorAll(".dsa-entry");
 
 filterButtons.forEach(button => {
     button.addEventListener("click", () => {
-        // Remove active from all buttons and add to clicked one
         filterButtons.forEach(btn => btn.classList.remove("active"));
         button.classList.add("active");
 
         const filterValue = button.getAttribute("data-filter");
 
         entries.forEach(entry => {
-            const topic = entry.getAttribute("data-topic");
-            const difficulty = entry.getAttribute("data-difficulty");
+            const topic = entry.getAttribute("data-topic") || "";
+            const difficulty = entry.getAttribute("data-difficulty") || "";
 
-            const match = filterValue === "all" || topic === filterValue || difficulty === filterValue;
+            // Split data-topic into array (e.g. "basic cpp" => ["basic", "cpp"])
+            const topicList = topic.split(" ");
+            const match = 
+                filterValue === "all" ||
+                topicList.includes(filterValue) ||
+                difficulty === filterValue;
 
             if (match) {
                 entry.style.display = "block";
 
-                // Trigger fade-in
+                // Trigger fade-in animation
                 entry.classList.remove("fade-in");
                 void entry.offsetWidth; // force reflow
                 entry.classList.add("fade-in");
