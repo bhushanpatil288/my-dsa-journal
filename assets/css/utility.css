@@ -137,6 +137,7 @@
     padding: 20px;
     border: 1px solid var(--accent);
     border-radius: 10px;
+    background-color: #182033;
 }
 .light-theme .card-border {
     border: 2px solid var(--border);
