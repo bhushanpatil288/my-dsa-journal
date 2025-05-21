@@ -52,7 +52,7 @@
             </div>
 
             <h2 class="text-center my-text-heading">Based on Difficulty</h2>
-            <div class="btn-group difficulty d-flex justify-content-center mb-3 flex-wrap">
+            <div class="mb-5 btn-group difficulty d-flex justify-content-center mb-3 flex-wrap">
                 <button class="btn btn-primary filter-btn" data-filter="easy">Easy</button>
                 <button class="btn btn-warning filter-btn" data-filter="medium">Medium</button>
                 <button class="btn btn-danger filter-btn" data-filter="hard">Hard</button>
@@ -61,344 +61,95 @@
 
             <!-- main content start -->
             <div class="container">
-                <div class="row">
-                    <!-- day-1 -->
-                    <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-difficulty="easy" data-day="1">
+                <div class="row gx-3 gy-4">
+                    <!-- Day 1 -->
+                    <div class="col-md-6 col-lg-4 dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic" data-difficulty="easy" data-day="1">
                         <h3 class="text-primary">Day 1: DSA Intro</h3>
-                        <p>🧠 Learned The Meaning of Data Structures and Algorithms. Importance of DSA Types of Data Structure</p>
-                    
-                        <!-- Collapsible trigger -->
-                        <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#dsaIntro" aria-expanded="false" aria-controls="dsaIntro">
-                            📘 Show More
-                        </button>
-                    
-                        <!-- Collapsible content -->
-                        <div class="collapse mt-3" id="dsaIntro">
-                            <div class="card card-body my-bg-black my-text-body border border-warning">
-                                <strong>Data Structures:</strong> Organized ways to store and manage data efficiently (e.g., arrays, stacks, queues, trees).<br><br>
-                                <strong>Algorithms:</strong> Step-by-step procedures or formulas for solving problems (e.g., sorting, searching, pathfinding).<br><br>
-                                Together, they form the backbone of efficient coding and problem-solving! 🧩💡
-                                <strong>Self Exercises</strong>
-                                <p class="m-0"><strong>Q.1 </strong>Write a brief note on DSA along with its importance.</p>
-                                <p class="m-0"><strong>Q.2 </strong>What is Data Structure? Explain its types.</p>
-                            </div>
-                        </div>
-                    
-                        <p class="mt-3">Click here 👉 to download DSA intro (by RNW) <a href="./assets/downloadable-content/pdf/1.dsa-intro.pdf">PDF <i class="bi bi-download"></i></a></p>
+                        <p>🧠 Learned the meaning of Data Structures and Algorithms. Importance of DSA Types of Data Structure.</p>
+                        <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay1">📘 Show More</button>
+                        <p class="mt-3">Click here 👉 to download DSA Intro (by RNW) <a href="./assets/downloadable-content/pdf/1.dsa-intro.pdf">PDF <i class="bi bi-download"></i></a></p>
+
                     </div>
-                    <!-- day-2 -->
-                    <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic cpp" data-difficulty="easy" data-day="2">
+                    <!-- Day 2 -->
+                    <div class="col-md-6 col-lg-4 dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="cpp" data-difficulty="easy" data-day="2">
                         <h3 class="text-primary">Day 2: Programming Intro</h3>
                         <p>💻 Understood what programming is and explored the history and importance of C++.</p>
-                    
-                        <!-- Collapsible trigger -->
-                        <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#programmingIntro" aria-expanded="false" aria-controls="programmingIntro">
+                        <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay2">📘 Show More</button>
+                        <p class="mt-3">Click here 👉 to download Programming Intro (by RNW) <a href="./assets/downloadable-content/pdf/2.what-is-programming.pdf">PDF <i class="bi bi-download"></i></a></p>
+
+                    </div>
+                    <!-- Day 3 -->
+                    <div class="col-md-6 col-lg-4 dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="cpp" data-difficulty="easy" data-day="3">
+                        <h3 class="text-primary">Day 3: C++ Setup & First Code</h3>
+                        <p>🧠 Installed compiler, wrote first program, and understood output steps.</p>
+                        <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay3">📘 Show More</button>
+                        <p class="mt-3">Click here 👉 to download c++ setup & first code (by RNW) <a href="./assets/downloadable-content/pdf/3.Day 3: Introduction to C++ Programming.pdf">PDF <i class="bi bi-download"></i></a></p>
+
+                    </div>
+                    <!-- Day 4 -->
+                    <div class="col-md-6 col-lg-4 dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="cpp" data-difficulty="easy" data-day="4">
+                        <h3 class="text-primary">Day 4: Variables & Data Types</h3>
+                        <p>🔢 Learned about variables, constants, escape sequences, and basic data types in C++.</p>
+                        <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay4">
                             📘 Show More
                         </button>
-                    
-                        <!-- Collapsible content -->
-                        <div class="collapse mt-3" id="programmingIntro">
-                            <div class="card card-body my-bg-black my-text-body border border-warning">
-                                <strong>🧠 What is Programming?</strong><br>
-                                Programming is the art of instructing computers to perform tasks using logic and code. It helps solve real-life problems by automating work!<br><br>
-                    
-                                <strong>📜 History of C++:</strong><br>
-                                C++ was created by Bjarne Stroustrup in 1983 as an extension of C. It introduced OOP concepts to make code more reusable and modular.<br><br>
-                    
-                                <strong>🚀 Importance of C++:</strong><br>
-                                C++ is lightning fast ⚡ and close to hardware, which makes it ideal for game engines 🎮, operating systems 🖥️, and embedded systems 🔧.<br><br>
-                    
-                                <strong>🛠️ Compiler vs Interpreter:</strong><br>
-                                - 🧾 <strong>Compiler:</strong> Converts the entire code into machine language before running it (e.g., C++)<br>
-                                - 🗣️ <strong>Interpreter:</strong> Translates code line-by-line at runtime (e.g., Python)<br><br>
-                    
-                                🌟 <em>Tip:</em> Start writing simple programs to practice logic, and always try to trace how each line works! 🧑‍💻✨
-        
-                                <strong class="mt-3">Self Exercises</strong>
-                                <p class="m-0"><strong>Q.1 </strong>Explain the term "Programming".</p>
-                                <p class="m-0"><strong>Q.2 </strong>Describe the history and importance of C++.</p>
-                                <p class="m-0"><strong>Q.3 </strong>State the difference between Compiler and Interpreter.</p>
-                            </div>
-                        </div>
-                    
-                        <p class="mt-3">Click here 👉 to download Programming Intro (by RNW) <a href="./assets/downloadable-content/pdf/2.what-is-programming.pdf">PDF <i class="bi bi-download"></i></a></p>
-                    </div>
-                    <!-- day-3 & 4 -->
-                    <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic cpp" data-difficulty="easy" data-day="3">
-                        <div class="card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic cpp" data-difficulty="easy" data-day="3">
-                            <h3 class="text-primary">Day 3: C++ Setup & First Code</h3>
-                            <p>🧠 Learned how to install a C++ compiler, configure environment variables, and write your first C++ program.</p>
-                        
-                            <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#cppDay2" aria-expanded="false" aria-controls="cppDay2">
-                                📘 Show More
-                            </button>
-                        
-                            <div class="collapse mt-3" id="cppDay2">
-                                <div class="card card-body my-bg-black my-text-body border border-warning">
-                                    <ul>
-                                        <li>⚙️ Installed C++ compiler & extensions like <code>C/C++</code> and <code>ErrorLens</code>.</li>
-                                        <li>🧩 <code>#include &lt;iostream&gt;</code> includes basic I/O functionalities.</li>
-                                        <li>📝 <code>int main() { return 0; }</code> — entry point of the program.</li>
-                                        <li>🗨️ <code>std::cout</code> is used to print to console using <code>&lt;&lt;</code> (insertion operator).</li>
-                                        <li>🖥️ To run: <code>g++ code.cpp</code> → <code>./a.exe</code></li>
-                                        <li>📌 <code>using namespace std;</code> lets you skip writing <code>std::</code> again and again.</li>
-                                        <li>
-                                            <strong>Exercise</strong>
-                                            <p class="m-0"><strong>1. </strong>Basic Age calculator</p>
-                                            <p class="m-0"><strong>2. </strong> Area of circle calculator</p>
-                                            <p class="m-0"><strong>3. </strong> Area of triangle calculator</p>
-                                            <p class="m-0"><strong>4. </strong> Area of square calculator</p>
-                                            <p class="m-0"><strong>5. </strong> Area of rectangle calculator</p>
-                                            <p class="m-0"><strong>6. </strong> Area of pentagon calculator</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        
-                            <p class="mt-3">Click here 👉 to download C++ Intro (by me) <a href="./assets/downloadable-content/pdf/3.Day 3: Introduction to C++ Programming.pdf" target="_blank">PDF <i class="bi bi-download"></i></a></p>
-                        </div>
-                        <!-- day 3 & 4 -->
-                        <div class="card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic cpp" data-difficulty="easy" data-day="4">
-                            <h3 class="text-primary">Day 4: Variables & Data Types</h3>
-                            <p>🔢 Learned about data types, variables, escape sequences, and constants in C++.</p>
-                        
-                            <!-- Collapsible trigger -->
-                            <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#cppDay3" aria-expanded="false" aria-controls="cppDay3">
-                                📘 Show More
-                            </button>
-                        
-                            <!-- Collapsible content -->
-                            <div class="collapse mt-3" id="cppDay3">
-                                <div class="card card-body my-bg-black my-text-body border border-warning">
-                                    <strong>🔹 Data Types:</strong> Define the kind of data stored in variables. Examples:<br>
-                                    - <code>int</code>: whole numbers<br>
-                                    - <code>float</code>: floating point numbers<br>
-                                    - <code>char</code>: single characters<br>
-                                    - <code>string</code>: text<br>
-                                    - <code>bool</code>: true or false (0 or 1)<br><br>
-                        
-                                    <strong>📏 Check Size:</strong> Use <code>sizeof()</code> to check how much memory a variable uses.<br><br>
-                        
-                                    <strong>🔠 Modifiers:</strong> Use <code>long</code> to increase size, <code>double</code> for more precision than float.<br><br>
-                        
-                                    <strong>🧾 Constants:</strong> Use <code>const</code> or <code>#define</code> for fixed values like PI.<br><br>
-                        
-                                    <strong>🧪 Escape Sequences:</strong> <code>\n</code> for new line, <code>\t</code> for tab.<br>
-                                    <code>endl</code> can also be used to end a line.
-                                    <strong class="mt-2">Self Exercises</strong>
-                                    <p class="m-0"><strong>Q.1 </strong>Explain Data Types, Variables, and keywords in detail with example.</p>
-                                    <p class="m-0"><strong>Q.2 </strong>Describe boolean data type in detail with example</p>
-                                </div>
-                            </div>
-                        
-                            <p class="mt-3">Click here 👉 to download C++ Variables (by me) <a href="./assets/downloadable-content/word/3.Day-4:CPP_Variables.docx">Word File <i class="bi bi-download"></i></a></p>
-                        </div>
-                        <p class="mt-3">Click here 👉 to download C++ setup, first code & Variables (by RNW) <a href="./assets/downloadable-content/pdf/3.Day4:c++ setup & variables.pdf">PDF <i class="bi bi-download"></i></a></p>
+                        <p class="mt-3">Click here 👉 to Variables & Data Types (by RNW) <a href="./assets/downloadable-content/pdf/3.Day4:c++ setup & variables.pdf">PDF <i class="bi bi-download"></i></a></p>
+
                     </div>
                     <!-- day-5 -->
-                    <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="tools" data-difficulty="easy" data-day="5">
+                    <div class="col-md-6 col-lg-4 dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="tools basic" data-difficulty="easy" data-day="5">
                         <h3 class="text-primary">Day 5:🌱 Git & GitHub Basics</h3>
                         <p>🚀 Learn how version control works and start using Git & GitHub today!</p>
-                    
-                        <!-- Collapsible trigger -->
-                        <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#gitBasics" aria-expanded="false" aria-controls="gitBasics">
+                        <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay5">
                             📘 Show More
                         </button>
-                        <!-- Collapsible content -->
-                        <div class="collapse mt-3" id="gitBasics">
-                            <div class="card card-body my-bg-black my-text-body border border-info">
-                                <strong>🔧 Installation:</strong><br>
-                                - Windows: Download from <a href="https://git-scm.com" target="_blank">git-scm.com</a><br>
-                                - Mac/Linux: Use <code>brew install git</code> or <code>sudo apt install git</code><br><br>
-                    
-                                <strong>💡 What is Git?</strong><br>
-                                - A **version control system** to track code changes locally.<br><br>
-                    
-                                <strong>☁️ What is GitHub?</strong><br>
-                                - An **online hosting service** for your Git repositories.<br><br>
-                    
-                                <strong>🔐 Public vs Private Repositories:</strong><br>
-                                - **Public** = Anyone can see your code<br>
-                                - **Private** = Only you and collaborators can access<br><br>
-                    
-                                <strong>💻 Basic Git Commands:</strong><br>
-                                <code>git init</code> → Start a local repo<br>
-                                <code>git add .</code> → Stage all changes<br>
-                                <code>git commit -m "message"</code> → Save snapshot<br>
-                                <code>git remote add origin URL</code> → Connect to GitHub repo<br>
-                                <code>git push -u origin main</code> → Upload code<br>
-                                <code>git pull</code> → Download latest from GitHub<br><br>
-                    
-                                <strong>🧠 Tip:</strong> Always <code>git status</code> to check what's happening.
-        
-                                <strong class="mt-3">Github Exercise</strong>
-                                <p class="m-0"><strong>1. </strong>Explain Key differences between Git and GitHub.</p>
-                                <p class="m-0"><strong>2. </strong>Describe the core concepts of Git: repository, working directory, staging area, and commit.</p>
-                                <p class="m-0"><strong>3. </strong>What are the different types of GitHub repositories (public, private)?</p>
-                                <p class="m-0"><strong>4. </strong>Describe the steps involved in pushing your local changes to a remote repository on GitHub</p>
-                            </div>
-                        </div>
-                    
                         <p class="mt-3">Click here 👉 to download Git & GitHub basics (by RNW) <a href="./assets/downloadable-content/pdf/4.Day-5-GitHub.pdf">PDF <i class="bi bi-download"></i></a></p>
                     </div>
                     <!-- day-6 -->
-                    <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic cpp" data-difficulty="easy" data-day="6">
+                    <div class="col-md-6 col-lg-4 dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="cpp" data-difficulty="easy" data-day="6">
                         <h3 class="text-primary">Day 6:⚙️ C++ Operators & Type Conversion</h3>
                         <p>Learn about different operators in C++ and how type conversion works.</p>
-        
-                        <!-- Collapsible trigger -->
-                        <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#cppOperators" aria-expanded="false" aria-controls="cppOperators">
+                        <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay6">
                             📘 Show More
                         </button>
-        
-                        <!-- Collapsible content -->
-                        <div class="collapse mt-3" id="cppOperators">
-                            <div class="card card-body my-bg-black my-text-body border border-warning">
-        
-                            <strong>🧮 Types of Operators:</strong><br>
-                            <ul>
-                                <li><b>Arithmetic</b>: +, -, *, /, %</li>
-                                <li><b>Relational</b>: ==, !=, &gt;, &lt;, &gt;=, &lt;=</li>
-                                <li><b>Logical</b>: &&, ||, !</li>
-                                <li><b>Assignment</b>: =, +=, -=, *=, /=</li>
-                                <li><b>Unary</b>: ++, -- (prefix/postfix)</li>
-                                <li><b>Miscellaneous</b>: sizeof(), comma operator etc.</li>
-                            </ul>
-        
-                            <hr>
-        
-                            <strong>🔢 Operator Precedence:</strong><br>
-                            - Some operators are executed before others in an expression.<br>
-                            - Example: <code>int x = 5 + 2 * 3;</code> → Multiplication runs first.<br>
-                            - Use <code>()</code> to control order.<br>
-        
-                            <hr>
-        
-                            <strong>🔁 Type Conversion:</strong><br>
-                            - Converting a value from one data type to another.<br><br>
-        
-                            <u>🔸 Implicit Conversion:</u><br>
-                            - Done automatically by the compiler.<br>
-                            - Example: <code>int + float</code> → int converts to float<br><br>
-        
-                            <u>🔹 Explicit Conversion (Type Casting):</u><br>
-                            - Done manually by programmer.<br>
-                            - Example: <code>(int)3.14</code> → becomes 3<br>
-        
-                            </div>
-                        </div>
         
                         <p class="mt-3">📌 Master these early for stronger logic and cleaner code!</p>
                         <p class="">Click here 👉 to download operators & Type conversion (by RNW) <a href="./assets/downloadable-content/pdf/5.Day-6-operators&type-conversion.pdf">PDF <i class="bi bi-download"></i></a></p>
         
                     </div>
                     <!-- day-7 -->
-                    <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="basic cpp" data-difficulty="easy" data-day="7">
+                    <div class="col-md-6 col-lg-4 dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="cpp" data-difficulty="easy" data-day="7">
                         <h3 class="text-primary">Day 7:🧠 Control Structures and 🔷 Flowchart in Programming</h3>
                         <p>Understand how the flow of execution is managed using different control structures.</p>
         
                         <!-- Collapsible trigger -->
-                        <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#controlStructure" aria-expanded="false" aria-controls="controlStructure">
+                        <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay7">
                             📘 Show More
                         </button>
-        
-                        <!-- Collapsible content -->
-                        <div class="collapse mt-3" id="controlStructure">
-                            <div class="card card-body my-bg-black my-text-body border border-warning">
-        
-                                <strong>📍 Types of Control Structures:</strong><br><br>
-        
-                                <u class="text-decoration-none fw-bold">🔹 Sequential Structure:</u><br>
-                                - Code executes line by line from top to bottom.<br><br>
-        
-                                <u class="text-decoration-none fw-bold">🔸 Selection Structure:</u><br>
-                                - Decision-making structures based on conditions.<br>
-                                <ul>
-                                    <li><b>if</b> – Runs block if condition is true.</li>
-                                    <li><b>if-else</b> – One block runs if true, another if false.</li>
-                                    <li><b>if-else-if Ladder</b> – Multiple conditions checked in sequence.</li>
-                                    <li><b>Nested if</b> – if inside another if.</li>
-                                    <li><b>Ternary</b> – <code>condition ? trueBlock : falseBlock;</code></li>
-                                    <li><b>switch-case</b> – Selects block based on value (good alternative to long if-else chains).</li>
-                                </ul><br>
-        
-                                <u>🔁 Repetition Structure:</u><br>
-                                - Used for looping (covered later in detail).<br>
-        
-        
-                                 <strong class="mt-5">📌 What is a Flowchart?</strong><br>
-                                - A diagram that shows the sequence of steps in a program.<br>
-                                - Helps plan, debug, and explain logic clearly.<br><br>
-        
-                                <strong>📐 Common Symbols:</strong><br>
-                                <ul>
-                                    <li><b>Terminator</b> – 🟢 Start/End (Oval)</li>
-                                    <li><b>Process</b> – 🔲 Operation or action (Rectangle)</li>
-                                    <li><b>Decision</b> – 🔷 Condition check (Diamond)</li>
-                                    <li><b>Input/Output</b> – 🔺 Input/output operations (Parallelogram)</li>
-                                    <li><b>Arrow</b> – ➡️ Shows the direction of flow</li>
-                                </ul><br>
-        
-                                <strong>🛠️ Example Use:</strong><br>
-                                - Before writing actual code, design a flowchart to get clarity.<br>
-                                - Especially helpful for beginners and complex logic.<br>
-        
-                            </div>
-                        </div>
         
                         <p class="mt-3">📌 Control structures are the building blocks of decision-making in code!</p>
                         <p class="mt-3">Click here 👉 to download control structures (by RNW) <a href="./assets/downloadable-content/pdf/6.Day-7-control-structures.pdf" target="_blank">PDF <i class="bi bi-download"></i></a></p>
                         <p class="mt-3">Click here 👉 to download flowchart (by RNW) <a href="./assets/downloadable-content/pdf/7.Day-7-flowchart.pdf" target="_blank">PDF <i class="bi bi-download"></i></a></p>
                     </div>
                     <!-- day-8 -->
-                    <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="cpp basic" data-difficulty="easy" data-day="8">
+                    <div class="col-md-6 col-lg-4 dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="cpp" data-difficulty="easy" data-day="8">
                         <h3 class="text-primary">Day 8: Selection Structure – Ternary & Switch Case</h3>
                         <p>🔀 Learned how to make decisions in C++ using <strong>ternary operators</strong> and <strong>switch cases</strong>.</p>
         
                         <!-- Collapsible trigger -->
-                        <button class="btn btn-outline-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#selectionStructure" aria-expanded="false" aria-controls="selectionStructure">
+                        <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay8">
                             📘 Show More
                         </button>
         
-                        <!-- Collapsible content -->
-                        <div class="collapse mt-3" id="selectionStructure">
-                            <div class="card card-body my-bg-black my-text-body border border-warning">
-                                <strong>🧪 Ternary Operator:</strong><br>
-                                - Syntax: <code>condition ? expression1 : expression2;</code><br>
-                                - Used for short conditional assignments or decisions.<br>
-                                - Example: <code>int max = (a > b) ? a : b;</code><br><br>
-        
-                                <strong>🎛️ Switch Case:</strong><br>
-                                - Used when we have multiple conditions based on a single variable.<br>
-                                - Syntax:
-                                <pre><code>switch(variable) {
-                        case value1:
-                            // code
-                            break;
-                        case value2:
-                            // code
-                            break;
-                        default:
-                            // default code
-                    }</code></pre>
-                                - Ideal for menu-based programs or decision trees.<br><br>
-        
-                                <strong>💡 Tips:</strong>
-                                <ul>
-                                    <li>Ternary is best for simple conditions.</li>
-                                    <li>Switch is better for checking multiple fixed values.</li>
-                                    <li>Always include <code>break</code> in cases to avoid fall-through.</li>
-                                    <li><code>default</code> is optional but useful as a fallback.</li>
-                                </ul>
-        
-                                <strong class="mt-3">Self Exercises</strong>
-                                <p class="m-0"><strong>Q.1</strong> Write a program to find the greater number using the ternary operator.</p>
-                                <p class="m-0"><strong>Q.2</strong> Create a menu-based calculator using switch case.</p>
-                                <p class="m-0"><strong>Q.3</strong> Write a program that takes a day number (1–7) and prints the corresponding day using switch case.</p>
-                            </div>
-                        </div>
-        
                         <p class="mt-3">Click here 👉 to download Ternary & Switch (by RNW) <a href="./assets/downloadable-content/pdf/8.Day-8-ternary-switch.pdf" target="_blank">PDF <i class="bi bi-download"></i></a></p>
+                    </div>
+                    <!-- Day 9 -->
+                    <div class="col-md-6 col-lg-4 dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="cpp" data-difficulty="easy" data-day="9">
+                        <h3 class="text-primary">Day 9: Repeating Structures</h3>
+                        <p>🔁 Explored different types of loops in programming: <strong>while</strong>, <strong>for</strong>, and <strong>do-while</strong>. Understood how and when to use each based on the condition and iteration needs.</p>
+                        <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay9">📘 Show More</button>
+                        <p class="mt-3">Click here 👉 to Repetition Stucture (Loops) (by RNW) <a href="./assets/downloadable-content/pdf/9.Day-9repetitionStructure(Loops).pdf" target="_blank">PDF <i class="bi bi-download"></i></a></p>
+
                     </div>
                 </div>
             </div>
@@ -439,6 +190,329 @@
     </div>
     <!-- me end -->
     <!-- footer end -->
+
+    <!-- modals -->
+
+    <!-- Modal: Day 1 -->
+    <div class="modal fade" id="modalDay1" tabindex="-1" aria-labelledby="modalDay1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content my-bg-black my-text-body border-warning border">
+        <div class="modal-header">
+            <h5 class="modal-title text-warning" id="modalDay1Label">Day 1: DSA Intro</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Data Structures:</strong> Organized ways to store and manage data efficiently (e.g., arrays, stacks, queues, trees).</p>
+            <p><strong>Algorithms:</strong> Step-by-step procedures for solving problems (e.g., sorting, searching).</p>
+            <p>📚 Together, they form the backbone of efficient problem-solving!</p>
+            <hr>
+            <strong>Self Exercises:</strong>
+            <ul>
+            <li>Q1. Write a brief note on DSA and its importance.</li>
+            <li>Q2. What is Data Structure? Explain its types.</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal: Day 2 -->
+    <div class="modal fade" id="modalDay2" tabindex="-1" aria-labelledby="modalDay2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content my-bg-black my-text-body border-warning border">
+        <div class="modal-header">
+            <h5 class="modal-title text-warning" id="modalDay2Label">Day 2: Programming Intro</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p><strong>What is Programming?</strong> Instructing a computer using logic/code to solve problems.</p>
+            <p><strong>History of C++:</strong> Developed by Bjarne Stroustrup in 1983, added OOP features to C.</p>
+            <p><strong>Compiler vs Interpreter:</strong> Compiler compiles entire code; Interpreter runs line-by-line.</p>
+            <hr>
+            <strong>Self Exercises:</strong>
+            <ul>
+            <li>Q1. Explain the term "Programming".</li>
+            <li>Q2. Describe the history and importance of C++.</li>
+            <li>Q3. Difference between Compiler and Interpreter.</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal: Day 3 -->
+    <div class="modal fade" id="modalDay3" tabindex="-1" aria-labelledby="modalDay3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content my-bg-black my-text-body border-warning border">
+        <div class="modal-header">
+            <h5 class="modal-title text-warning" id="modalDay3Label">Day 3: C++ Setup & First Code</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <ul>
+            <li>Installed compiler & VS Code extensions.</li>
+            <li><code>#include &lt;iostream&gt;</code> for input/output</li>
+            <li><code>int main()</code> is entry point of program</li>
+            <li><code>std::cout</code> for output</li>
+            <li>Command: <code>g++ file.cpp</code> → <code>./a.exe</code></li>
+            <li><code>using namespace std;</code> to skip writing <code>std::</code></li>
+            </ul>
+            <hr>
+            <strong>Exercises:</strong>
+            <ul>
+            <li>1. Age calculator</li>
+            <li>2. Area of Circle</li>
+            <li>3. Area of Triangle</li>
+            <li>4. Area of Square</li>
+            <li>5. Area of Rectangle</li>
+            <li>6. Area of Pentagon</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal: Day 4 -->
+    <div class="modal fade" id="modalDay4" tabindex="-1" aria-labelledby="modalDay4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content my-bg-black my-text-body border-warning border">
+        <div class="modal-header">
+            <h5 class="modal-title text-warning" id="modalDay4Label">Day 4: Variables & Data Types</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Data Types:</strong> int, float, char, bool, string</p>
+            <p><strong>Size:</strong> Use <code>sizeof()</code></p>
+            <p><strong>Modifiers:</strong> long, double</p>
+            <p><strong>Constants:</strong> <code>const</code>, <code>#define</code></p>
+            <p><strong>Escape Sequences:</strong> <code>\n</code>, <code>\t</code>, <code>endl</code></p>
+            <hr>
+            <strong>Self Exercises:</strong>
+            <ul>
+            <li>Q1. Explain Data Types, Variables, and keywords with example.</li>
+            <li>Q2. Describe boolean data type with example.</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal: Day 5 -->
+    <div class="modal fade" id="modalDay5" tabindex="-1" aria-labelledby="modalDay5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content my-bg-black my-text-body">
+            <div class="modal-header">
+                <h5 class="modal-title text-primary" id="modalDay5Label">Day 5:🌱 Git & GitHub Basics</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+                <div class="modal-body">
+                    <strong>🔧 Installation:</strong><br>
+                    - Windows: Download from <a href="https://git-scm.com" target="_blank">git-scm.com</a><br>
+                    - Mac/Linux: Use <code>brew install git</code> or <code>sudo apt install git</code><br><br>
+        
+                    <strong>💡 What is Git?</strong><br>
+                    - A **version control system** to track code changes locally.<br><br>
+        
+                    <strong>☁️ What is GitHub?</strong><br>
+                    - An **online hosting service** for your Git repositories.<br><br>
+        
+                    <strong>🔐 Public vs Private Repositories:</strong><br>
+                    - **Public** = Anyone can see your code<br>
+                    - **Private** = Only you and collaborators can access<br><br>
+        
+                    <strong>💻 Basic Git Commands:</strong><br>
+                    <code>git init</code> → Start a local repo<br>
+                    <code>git add .</code> → Stage all changes<br>
+                    <code>git commit -m "message"</code> → Save snapshot<br>
+                    <code>git remote add origin URL</code> → Connect to GitHub repo<br>
+                    <code>git push -u origin main</code> → Upload code<br>
+                    <code>git pull</code> → Download latest from GitHub<br><br>
+        
+                    <strong>🧠 Tip:</strong> Always <code>git status</code> to check what's happening.
+
+                    <strong class="mt-3">Github Exercise</strong>
+                    <p class="m-0"><strong>1. </strong>Explain Key differences between Git and GitHub.</p>
+                    <p class="m-0"><strong>2. </strong>Describe the core concepts of Git: repository, working directory, staging area, and commit.</p>
+                    <p class="m-0"><strong>3. </strong>What are the different types of GitHub repositories (public, private)?</p>
+                    <p class="m-0"><strong>4. </strong>Describe the steps involved in pushing your local changes to a remote repository on GitHub</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Day 6 -->
+    <div class="modal fade" id="modalDay6" tabindex="-1" aria-labelledby="modalDay6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content my-bg-black my-text-body">
+            <div class="modal-header">
+                <h5 class="modal-title text-primary" id="modalDay6Label">Day 6:⚙️ C++ Operators & Type Conversion</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <strong>🧮 Types of Operators:</strong><br>
+                <ul>
+                    <li><b>Arithmetic</b>: +, -, *, /, %</li>
+                    <li><b>Relational</b>: ==, !=, &gt;, &lt;, &gt;=, &lt;=</li>
+                    <li><b>Logical</b>: &&, ||, !</li>
+                    <li><b>Assignment</b>: =, +=, -=, *=, /=</li>
+                    <li><b>Unary</b>: ++, -- (prefix/postfix)</li>
+                    <li><b>Miscellaneous</b>: sizeof(), comma operator etc.</li>
+                </ul>
+
+                <hr>
+
+                <strong>🔢 Operator Precedence:</strong><br>
+                - Some operators are executed before others in an expression.<br>
+                - Example: <code>int x = 5 + 2 * 3;</code> → Multiplication runs first.<br>
+                - Use <code>()</code> to control order.<br>
+
+                <hr>
+
+                <strong>🔁 Type Conversion:</strong><br>
+                - Converting a value from one data type to another.<br><br>
+
+                <u>🔸 Implicit Conversion:</u><br>
+                - Done automatically by the compiler.<br>
+                - Example: <code>int + float</code> → int converts to float<br><br>
+
+                <u>🔹 Explicit Conversion (Type Casting):</u><br>
+                - Done manually by programmer.<br>
+                - Example: <code>(int)3.14</code> → becomes 3<br>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Day 7 -->
+    <div class="modal fade" id="modalDay7" tabindex="-1" aria-labelledby="modalDay6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content my-bg-black my-text-body">
+            <div class="modal-header">
+                <h5 class="modal-title text-primary" id="modalDay6Label">Day 7:🧠 Control Structures and 🔷 Flowchart in Programming</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                 <strong>📍 Types of Control Structures:</strong><br><br>
+        
+                <u class="text-decoration-none fw-bold">🔹 Sequential Structure:</u><br>
+                - Code executes line by line from top to bottom.<br><br>
+
+                <u class="text-decoration-none fw-bold">🔸 Selection Structure:</u><br>
+                - Decision-making structures based on conditions.<br>
+                <ul>
+                    <li><b>if</b> – Runs block if condition is true.</li>
+                    <li><b>if-else</b> – One block runs if true, another if false.</li>
+                    <li><b>if-else-if Ladder</b> – Multiple conditions checked in sequence.</li>
+                    <li><b>Nested if</b> – if inside another if.</li>
+                    <li><b>Ternary</b> – <code>condition ? trueBlock : falseBlock;</code></li>
+                    <li><b>switch-case</b> – Selects block based on value (good alternative to long if-else chains).</li>
+                </ul><br>
+
+                <u>🔁 Repetition Structure:</u><br>
+                - Used for looping (covered later in detail).<br>
+
+
+                    <strong class="mt-5">📌 What is a Flowchart?</strong><br>
+                - A diagram that shows the sequence of steps in a program.<br>
+                - Helps plan, debug, and explain logic clearly.<br><br>
+
+                <strong>📐 Common Symbols:</strong><br>
+                <ul>
+                    <li><b>Terminator</b> – 🟢 Start/End (Oval)</li>
+                    <li><b>Process</b> – 🔲 Operation or action (Rectangle)</li>
+                    <li><b>Decision</b> – 🔷 Condition check (Diamond)</li>
+                    <li><b>Input/Output</b> – 🔺 Input/output operations (Parallelogram)</li>
+                    <li><b>Arrow</b> – ➡️ Shows the direction of flow</li>
+                </ul><br>
+
+                <strong>🛠️ Example Use:</strong><br>
+                - Before writing actual code, design a flowchart to get clarity.<br>
+                - Especially helpful for beginners and complex logic.<br>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Day 8 -->
+    <div class="modal fade" id="modalDay8" tabindex="-1" aria-labelledby="modalDay6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content my-bg-black my-text-body">
+            <div class="modal-header">
+                <h5 class="modal-title text-primary" id="modalDay6Label">Day 8: Selection Structure – Ternary & Switch Case</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                 <strong>🧪 Ternary Operator:</strong><br>
+                - Syntax: <code>condition ? expression1 : expression2;</code><br>
+                - Used for short conditional assignments or decisions.<br>
+                - Example: <code>int max = (a > b) ? a : b;</code><br><br>
+
+                <strong>🎛️ Switch Case:</strong><br>
+                - Used when we have multiple conditions based on a single variable.<br>
+                - Syntax:
+                <pre><code>switch(variable) {
+        case value1:
+            // code
+            break;
+        case value2:
+            // code
+            break;
+        default:
+            // default code
+    }</code></pre>
+                - Ideal for menu-based programs or decision trees.<br><br>
+
+                <strong>💡 Tips:</strong>
+                <ul>
+                    <li>Ternary is best for simple conditions.</li>
+                    <li>Switch is better for checking multiple fixed values.</li>
+                    <li>Always include <code>break</code> in cases to avoid fall-through.</li>
+                    <li><code>default</code> is optional but useful as a fallback.</li>
+                </ul>
+
+                <strong class="mt-3">Self Exercises</strong>
+                <p class="m-0"><strong>Q.1</strong> Write a program to find the greater number using the ternary operator.</p>
+                <p class="m-0"><strong>Q.2</strong> Create a menu-based calculator using switch case.</p>
+                <p class="m-0"><strong>Q.3</strong> Write a program that takes a day number (1–7) and prints the corresponding day using switch case.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Day 9 -->
+    <div class="modal fade" id="modalDay9" tabindex="-1" aria-labelledby="modalDay9Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content my-bg-black my-text-body card-border">
+            <div class="modal-header">
+                <h5 class="modal-title text-warning" id="modalDay9Label">Day 9: Repeating Structures - Loops</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li><strong>While Loop:</strong> Runs as long as a condition is true. Best for unknown iteration counts.</li>
+                <li><strong>For Loop:</strong> Ideal for known iteration counts. Compact and clear syntax for counters.</li>
+                <li><strong>Do-While Loop:</strong> Similar to while loop, but runs at least once even if the condition is false at the start.</li>
+                </ul>
+                <p>🛠️ Loops make tasks repeatable and efficient—core to almost every algorithm!</p>
+                <strong>Self Exercises: </strong>
+                <ul>
+                    <li>
+                        <strong>Q.1</strong>
+                        <p>Briefly explain the primary categories of loops in programming.</p>
+                    </li>
+                     <li>
+                        <strong>Q.2</strong>
+                        <p>Define an infinite loop and discuss how to avoid it in while loops.</p>
+                    </li>
+                </ul>
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <!-- js -->
     <!-- bootstrap -->

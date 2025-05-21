@@ -18,12 +18,16 @@
 
 .dsa-entry{
     transition: all 0.3s linear;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .dsa-entry:hover{
     box-shadow: 0px 0px 10px var(--accent);
     /* animation: card-bg 1s linear none infinite; */
+}
+
+html.light-theme .btn-close{
+    filter: invert(0)
 }
 
 @keyframes card-bg {
