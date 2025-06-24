@@ -50,7 +50,9 @@
                 <button class="btn-1 filter-btn" data-filter="arrays">🧮 Arrays</button>
                 <button class="btn-1 filter-btn" data-filter="tools">💾 Tools</button>
                 <button class="btn-1 filter-btn" data-filter="functions">📦 Functions</button>
+                <button class="btn-1 filter-btn" data-filter="pointers">👉 Pointers</button>
                 <button class="btn-1 filter-btn" data-filter="linkedlist">🔗 COMING SOON</button>
+
             </div>
 
             <h2 class="text-center my-text-heading">Based on Difficulty</h2>
@@ -175,13 +177,13 @@
                     </div>
                     <!-- Day 13 -->
                     <div class="col-md-6 col-lg-4  dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="cpp loops" data-difficulty="medium" data-day="13">
-                        <h3 class="text-primary">Day 13: 🔲 Pattern With Spaces</h3>
+                        <h3 class="text-warning">Day 13: 🔲 Pattern With Spaces</h3>
                         <p>✨ Learned how to align patterns with spaces. Trick: Print space first, then stars using nested loops.</p>
                         <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay13">📘 Show More</button>
                     </div>
                     <!-- Day 14 -->
                     <div class="col-md-6 col-lg-4  dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="cpp loops" data-difficulty="medium" data-day="14">
-                        <h3 class="text-primary">Day 14: 🧩 Custom Pattern</h3>
+                        <h3 class="text-warning">Day 14: 🧩 Custom Pattern</h3>
                         <p>🖌️ Created custom-designed patterns. Trick: Understand line-by-line logic and use nested loops accordingly.</p>
                         <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay14">📘 Show More</button>
                     </div>
@@ -196,6 +198,18 @@
                         <h3 class="text-primary">Days 16–23: 🔁 Arrays + Functions</h3>
                         <p>🧠 Covered 1D/2D arrays, for-each loop, sizeof, CRUD, and function types like TNRN, TSRS, etc.</p>
                         <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay16to23">📘 Show More</button>
+                    </div>
+                    <!-- Day 24 -->
+                    <div class="col-md-6 col-lg-4 dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="cpp pointers" data-difficulty="medium" data-day="24">
+                        <h3 class="text-warning">Day 24: 🧷 Pointers Deep Dive</h3>
+                        <p>🧠 Learned about <strong>Pointers</strong>, <strong>Array of Pointers</strong>, and <strong>Chain of Pointers</strong> (Pointer to Pointer).</p>
+                        <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay24">📘 Show More</button>
+                    </div>
+                    <!-- Day 25 -->
+                    <div class="col-md-6 col-lg-4 dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="cpp functions" data-difficulty="medium" data-day="25">
+                        <h3 class="text-warning">Day 25: 🔗 Reference Variables & Argument Passing</h3>
+                        <p>🧠 Learned about <strong>Reference Variables</strong> and different <strong>Argument Passing Techniques</strong> in functions.</p>
+                        <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay25">📘 Show More</button>
                     </div>
 
 
@@ -214,11 +228,6 @@
             <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="arrays" data-difficulty="hard" data-day="2">
                 <h3 class="text-success">COMING SOON</h3>
                 <p>🧩 COMING SOON</p>
-            </div>
-            
-            <div class="dsa-entry card my-bg-black my-text-body card-border p-3 mb-3" data-topic="linkedlist" data-difficulty="medium" data-day="3">
-                <h3 class="text-warning">COMING SOON</h3>
-                <p>🔗 COMING SOON</p>
             </div>
             <!-- main content end -->
         </section>
@@ -751,6 +760,123 @@
 
                 <p class="mt-3">🧪 Practice with these will give you a solid foundation in structured programming and memory handling in C++.</p>
             </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Day 24 -->
+    <div class="modal fade" id="modalDay24" tabindex="-1" aria-labelledby="modalDay24Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content my-bg-black my-text-body">
+                <div class="modal-header">
+                    <h5 class="modal-title text-primary" id="modalDay24Label">Day 24: Pointers, Array of Pointers & Chain of Pointers</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>🔹 Pointers:</strong><br>
+                    - <strong>Definition:</strong> A pointer is a variable that stores the memory address of another variable.<br>
+                    - <strong>Syntax:</strong> <code>datatype *pointerName;</code><br>
+                    - <strong>Example:</strong>
+                    <pre><code>int a = 5;
+    int *p = &a; // p stores the address of a</code></pre>
+                    - <strong>Important:</strong> Printing a pointer directly shows the memory address. Use <code>*p</code> to access the value stored at that address.<br><br>
+
+                    <strong>🔸 Array of Pointers:</strong><br>
+                    - <strong>Definition:</strong> An array that stores addresses instead of values.<br>
+                    - <strong>Example:</strong>
+                    <pre><code>int a = 10, b = 20, c = 30;
+    int *arr[3] = {&a, &b, &c};</code></pre>
+                    - Useful for handling arrays of strings, dynamic arrays, or when working with functions like pointers to functions.<br><br>
+
+                    <strong>🔗 Chain of Pointers (Pointer to Pointer):</strong><br>
+                    - <strong>Definition:</strong> A pointer that stores the address of another pointer.<br>
+                    - <strong>Example:</strong>
+                    <pre><code>int x = 50;
+    int *p = &x;
+    int **q = &p; // q stores address of p</code></pre>
+                    - Useful in advanced data structures like dynamic 2D arrays and when passing pointers by reference.<br><br>
+
+                    <strong>🧠 Quick Tip:</strong><br>
+                    - Remember: Each <code>*</code> represents a level of indirection.<br>
+                    - Visualize the memory links to understand pointer chains better!<br>
+                </div>
+                <div class="modal-footer">
+                    <a target="_blank" href="https://docs.google.com/presentation/d/1sHlk7TIX6RM9EFnA6Iu-9zHRoWMOC9AG0iFQeqAJbhI/edit?slide=id.g2bb24177c28_0_176#slide=id.g2bb24177c28_0_176" class="btn btn-outline-info btn-sm">Pointers by RNW</a>
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Day 25 -->
+    <div class="modal fade" id="modalDay25" tabindex="-1" aria-labelledby="modalDay25Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content my-bg-black my-text-body">
+                <div class="modal-header">
+                    <h5 class="modal-title text-primary" id="modalDay25Label">Day 25: Reference Variables & Argument Passing</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <strong>📌 Reference Variables:</strong><br>
+                    - <strong>Definition:</strong> A reference is an alias for another variable (it shares the same memory address).<br>
+                    - <strong>Syntax:</strong> <code>datatype &referenceName = originalVariable;</code><br>
+                    - <strong>Example:</strong>
+                    <pre><code>int x = 5;
+    int &y = x; // y is now another name for x</code></pre>
+                    - Changes through <code>y</code> will directly affect <code>x</code>.<br><br>
+
+                    <strong>📌 Argument Passing:</strong><br>
+                    Understanding how data is passed to functions.<br><br>
+
+                    <u><strong>Types of Argument Passing:</strong></u><br>
+                    <ul>
+                        <li><strong>Passing a Value (Primitive):</strong> Pass simple variables.
+                            <pre><code>void show(int a) { cout << a; }
+    show(x);</code></pre>
+                        </li>
+
+                        <li><strong>Passing an Array:</strong> Arrays automatically pass their address.
+                            <pre><code>void display(int arr[], int n) { /* code */ }
+    display(arr, 5);</code></pre>
+                        </li>
+
+                        <li><strong>Passing a Pointer:</strong> Pass the memory address.
+                            <pre><code>void update(int *p) { *p = 10; }
+    update(&x);</code></pre>
+                        </li>
+
+                        <li><strong>Passing an Address:</strong> Same as passing a pointer.
+                            <pre><code>void increment(int *ptr) { (*ptr)++; }
+    increment(&a);</code></pre>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <u><strong>📂 Function Calling Types:</strong></u><br><br>
+
+                    <strong>1. Call by Value:</strong> <br>
+                    - Copies the actual value.<br>
+                    - Changes inside the function do not affect the original variable.<br>
+                    <pre><code>void change(int a) { a = 10; }</code></pre><br>
+
+                    <strong>2. Call by Reference:</strong> <br>
+                    - Uses reference variables.<br>
+                    - Changes inside the function affect the original variable.<br>
+                    <pre><code>void change(int &a) { a = 10; }</code></pre><br>
+
+                    <strong>3. Call by Const Reference:</strong> <br>
+                    - Used to pass large objects without copying, while preventing changes.<br>
+                    <pre><code>void print(const int &a) { cout << a; }</code></pre><br>
+
+                    <strong>🧠 Tips:</strong><br>
+                    - Call by value is safer for small variables.<br>
+                    - Call by reference is best for memory efficiency.<br>
+                    - Const reference is ideal when you want safety plus performance.<br>
+
+                </div>
+                <div class="modal-footer">
+                    <a target="_blank" href="https://docs.google.com/presentation/d/1EyrtBdvsys71ZcIz5GAuGUVSbsJiZ94thC2KdwnNZYg/edit?pli=1&slide=id.g2bb7d1bc2b4_0_108#slide=id.g2bb7d1bc2b4_0_108" class="btn btn-outline-info btn-sm">Resource by RNW</a>
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
