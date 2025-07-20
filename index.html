@@ -41,7 +41,9 @@
     <main>
         <section class="container mt-5 overflow-hidden">
             <!-- FILTER START -->
+             <hr>
             <h3 class="text-center my-text-heading">Based on Topic</h3>
+            <h4 class="text-center my-text-heading fw-bold">C++</h4>
             <div class="text-center mb-3 btn-group d-flex flex-wrap justify-content-center">
                 <button class="btn-1 filter-btn" data-filter="all">🌍 Show All</button>
                 <button class="btn-1 filter-btn" data-filter="basic">👶🏻 basics</button>
@@ -52,9 +54,15 @@
                 <button class="btn-1 filter-btn" data-filter="functions">📦 Functions</button>
                 <button class="btn-1 filter-btn" data-filter="pointers">👉 Pointers</button>
                 <button class="btn-1 filter-btn" data-filter="oop">🏗️ OOPs</button>
-                <button class="btn-1 filter-btn" data-filter="linkedlist">🔗 COMING SOON</button>
-
+                <button class="btn-1 filter-btn" data-filter="memory">🧠 Memory</button>
+                <button class="btn-1 filter-btn" data-filter="templates">Templates</button>
+                <button class="btn-1 filter-btn" data-filter="vectors">🧮 Vectors</button>
             </div>
+            <h4 class="text-center my-text-heading fw-bold">Data Structures</h4>
+            <div class="text-center mb-3 btn-group d-flex flex-wrap justify-content-center">
+                <button class="btn-1 filter-btn" data-filter="data-structure">🌍 Data Structures Only</button>
+            </div>
+            <hr>
 
             <h2 class="text-center my-text-heading">Based on Difficulty</h2>
             <div class="mb-5 btn-group difficulty d-flex justify-content-center mb-3 flex-wrap">
@@ -269,6 +277,57 @@
                             <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay30">📘 Show More</button>
                         </div>
                     </div>
+                    <!-- Day 31 Entry -->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="dsa-entry card my-bg-black my-text-body card-border p-3 h-100" data-topic="oop cpp" data-difficulty="hard" data-day="31">
+                            <h3 class="text-danger">Day 31: 🖥️ Abstraction & Access Modifiers</h3>
+                            <p>Understand abstraction, the use of abstract classes and pure virtual functions, and access modifiers in inheritance.</p>
+                            <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay31">📘 Show More</button>
+                        </div>
+                    </div>
+                    <!-- Day 32 Entry -->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="dsa-entry card my-bg-black my-text-body card-border p-3 h-100" data-topic="memory cpp" data-difficulty="hard" data-day="31">
+                            <h3 class="text-danger">Day 32: 🧠 Memory Allocation & RAM Structure</h3>
+                            <p>Understand static vs dynamic memory allocation and the internal structure of RAM in a C++ program.</p>
+                            <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay31Memory">📘 Show More</button>
+                        </div>
+                    </div>
+                    <!-- Day 33 Entry -->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="dsa-entry card my-bg-black my-text-body card-border p-3 h-100" data-topic="memory oop cpp" data-difficulty="medium" data-day="33">
+                            <h3 class="text-warning">Day 33: ⚙️ DMA – Procedural vs OOP</h3>
+                            <p>Compare dynamic memory allocation using <code>new</code> and <code>delete</code> in both procedural and object-oriented styles in C++.</p>
+                            <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay33DMAOOP">📘 Show More</button>
+                        </div>
+                    </div>
+                    <!-- Day 34 Entry -->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="dsa-entry card my-bg-black my-text-body card-border p-3 h-100" data-topic="templates cpp" data-difficulty="medium" data-day="34">
+                            <h3 class="text-warning">Day 34: 🧩 Templates & Their Types</h3>
+                            <p>Learn about C++ templates and how they help in writing generic code. Includes function and class templates.</p>
+                            <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay34Templates">📘 Show More</button>
+                        </div>
+                    </div>
+                    <!-- Day 35 Entry -->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="dsa-entry card my-bg-black my-text-body card-border p-3 h-100" data-topic="vectors cpp" data-difficulty="easy" data-day="35">
+                            <h3 class="text-warning">Day 35: 🧺 Vectors & Arrays</h3>
+                            <p>Understand C++ vectors, their methods, and how they differ from arrays.</p>
+                            <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay35Vector">📘 Show More</button>
+                        </div>
+                    </div>
+                    <!-- Day 36 Entry -->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="dsa-entry card my-bg-black my-text-body card-border p-3 h-100" data-topic="vectors cpp" data-difficulty="medium" data-day="36">
+                            <h3 class="text-warning">Day 36: 🧠 Vector Practice</h3>
+                            <p>Learn new vector syntaxes and solve practical problems using C++ STL vectors.</p>
+                            <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay36VectorQ">📘 Show More</button>
+                        </div>
+                    </div>
+                    <!-- Day 37 Entry -->
+
+
 
 
                 </div>
@@ -1262,6 +1321,377 @@ cout << Counter::getCount();  // Output: 2
         </div>
     </div>
     </div>
+    <!-- Modal Day 31 -->
+    <div class="modal fade" id="modalDay31" tabindex="-1" aria-labelledby="modalDay31Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content my-bg-black my-text-body card-border">
+            <div class="modal-header">
+                <h5 class="modal-title text-danger" id="modalDay31Label">Day 31: 🖥️ Abstraction & Access Modifiers</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>1) Abstraction</h5>
+                <ul>
+                <li><strong>Definition:</strong> Hiding internal implementation details and showing only necessary features.</li>
+                <li><strong>Key Concepts:</strong> 
+                    <ul>
+                    <li><strong>Abstract Class:</strong> A class that cannot be instantiated and contains at least one pure virtual function.</li>
+                    <li><strong>Pure Virtual Function:</strong> A function declared in a base class that must be overridden in derived classes. Syntax: <code>virtual void show() = 0;</code></li>
+                    </ul>
+                </li>
+                <li><strong>Example:</strong> Abstract base class <code>Shape</code> with pure virtual method <code>draw()</code>.</li>
+                </ul>
+
+                <h5>2) Access Modifiers in Inheritance</h5>
+                <ul>
+                <li><strong>Public:</strong> Derived class inherits public and protected members as-is.</li>
+                <li><strong>Protected:</strong> Derived class treats all inherited public members as protected.</li>
+                <li><strong>Private:</strong> All inherited members become private in derived class.</li>
+                </ul>
+
+                <h5>3) Visibility Modifiers (Access Specifiers)</h5>
+                <ul>
+                <li><strong>Public:</strong> Accessible everywhere.</li>
+                <li><strong>Protected:</strong> Accessible within the class and its subclasses.</li>
+                <li><strong>Private:</strong> Accessible only within the class itself.</li>
+                <li><strong>Note:</strong> Although "visibility" and "access" are sometimes used interchangeably, they refer to the same concept in C++.</li>
+                </ul>
+            </div>
+            <div class="modal-footer d-flex justify-content-between align-items-center">
+                <a target="_blank" href="https://docs.google.com/presentation/d/1z4ZL3LweIx_czwmgJc9EJ370YAUmWyR8LGv466u7ZUY/edit#slide=id.g4dfce81f19_0_45" class="btn btn-outline-info btn-sm">Resource by RNW</a>
+                <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Day 32 -->
+    <div class="modal fade" id="modalDay31Memory" tabindex="-1" aria-labelledby="modalDay31MemoryLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content my-bg-black my-text-body card-border">
+            <div class="modal-header">
+                <h5 class="modal-title text-danger" id="modalDay31MemoryLabel">Day 32: 🧠 Static vs. Dynamic Memory Allocation</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>1) Static Memory Allocation (SMA)</h5>
+                <ul>
+                <li><strong>Definition:</strong> Memory is allocated at compile time.</li>
+                <li><strong>Example:</strong> <code>int x = 10;</code> — memory is reserved before program runs.</li>
+                <li><strong>Scope:</strong> Limited to the block in which it is defined.</li>
+                </ul>
+
+                <h5>2) Memory Structure of RAM</h5>
+                <ul>
+                <li><strong>Code Section:</strong> Stores compiled instructions.</li>
+                <li><strong>Global/Static Section:</strong> Stores global and static variables.</li>
+                <li><strong>Stack:</strong> Stores function calls, local variables. Grows downwards.</li>
+                <li><strong>Heap:</strong> Used for dynamic memory. Grows upwards.</li>
+                </ul>
+                <div class="text-center my-2">
+                <img src="./assets/images/memory-structure.png" alt="Memory Structure" class="img-fluid" style="max-height:300px;">
+                </div>
+
+                <h5>3) Dynamic Memory Allocation (DMA)</h5>
+                <ul>
+                <li><strong>Definition:</strong> Memory allocated during runtime using <code>new</code> and released using <code>delete</code>.</li>
+                <li><strong>Need:</strong> When we don't know how much memory is required beforehand (e.g., user input size).</li>
+                <li><strong>Example:</strong> <code>int* ptr = new int;</code> → allocates memory in heap.</li>
+                <li><strong>Manual Deallocation:</strong> <code>delete ptr;</code></li>
+                </ul>
+
+                <h5>Stack vs Heap (Detailed)</h5>
+                <ul>
+                <li><strong>Stack:</strong> 
+                    <ul>
+                    <li>Automatically managed</li>
+                    <li>Fast but limited size</li>
+                    <li>Used for function calls, local vars</li>
+                    </ul>
+                </li>
+                <li><strong>Heap:</strong>
+                    <ul>
+                    <li>Manually managed</li>
+                    <li>Slower but more flexible</li>
+                    <li>Used for objects, arrays created via <code>new</code></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            <div class="modal-footer d-flex justify-content-between align-items-center">
+                <a target="_blank" href="https://docs.google.com/presentation/d/1E7WfnEXdZGn9b7Rgvtsu9TVDOQeyzHopiusnovvyUCE/edit?slide=id.gd431007ba2_0_215#slide=id.gd431007ba2_0_215" class="btn btn-outline-info btn-sm">Resource by RNW</a>
+                <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Day 33 -->
+    <div class="modal fade" id="modalDay33DMAOOP" tabindex="-1" aria-labelledby="modalDay33DMAOOPLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content my-bg-black my-text-body card-border">
+            <div class="modal-header">
+                <h5 class="modal-title text-warning" id="modalDay33DMAOOPLabel">Day 33: ⚙️ DMA with Procedural vs. OOP</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>1) DMA in Procedural Style</h5>
+                <ul>
+                <li>Uses <code>new</code> and <code>delete</code> with basic data types or structures.</li>
+                <li>No encapsulation or object behavior.</li>
+                <li><strong>Example:</strong> 
+                    <pre><code>int* ptr = new int(5); 
+        cout &lt;&lt; *ptr; 
+        delete ptr;</code></pre>
+                </li>
+                </ul>
+
+                <h5>2) DMA in OOP Style</h5>
+                <ul>
+                <li>Objects created with <code>new</code> trigger the constructor.</li>
+                <li><code>delete</code> calls the destructor automatically.</li>
+                <li><strong>Encapsulates</strong> both data and behavior.</li>
+                <li><strong>Example:</strong> 
+                    <pre><code>class Student {
+        public:
+            Student() { cout &lt;&lt; "Constructor called\n"; }
+            ~Student() { cout &lt;&lt; "Destructor called\n"; }
+        };
+
+        Student* s = new Student(); 
+        delete s;</code></pre>
+                </li>
+                </ul>
+
+                <h5>🔥 Exercise</h5>
+                <p><strong>Task:</strong> Demonstrate the use of <code>new</code> and <code>delete</code> with an object using OOP:</p>
+                <ul>
+                <li>Create a class <code>Book</code> with a constructor and destructor.</li>
+                <li>Dynamically allocate a <code>Book</code> object.</li>
+                <li>Ensure proper cleanup using <code>delete</code>.</li>
+                </ul>
+                <p><strong>Bonus:</strong> Try creating a dynamic array of objects using <code>new Book[n]</code> and then use <code>delete[]</code>.</p>
+
+                <hr>
+                <p><strong>Tip:</strong> Always pair every <code>new</code> with a <code>delete</code> to prevent memory leaks!</p>
+            </div>
+            <div class="modal-footer d-flex justify-content-between align-items-center">
+                <a target="_blank" href="https://docs.google.com/presentation/d/1v65jToxstvx3-h5jUoPf7HguLWYTn-KJ-xYG375TMtM/edit?slide=id.gd431007ba2_0_215#slide=id.gd431007ba2_0_215" class="btn btn-outline-info btn-sm">Resource by RNW</a>
+                <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Day 34 -->
+    <div class="modal fade" id="modalDay34Templates" tabindex="-1" aria-labelledby="modalDay34TemplatesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content my-bg-black my-text-body card-border">
+            <div class="modal-header">
+                <h5 class="modal-title text-warning" id="modalDay34TemplatesLabel">Day 34: 🧩 Introduction to Templates</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>🔹 What is a Template?</h5>
+                <ul>
+                <li>A C++ template allows writing generic and reusable code.</li>
+                <li>Instead of writing the same logic for different data types, we use templates.</li>
+                <li>It gets replaced with actual data types during compilation.</li>
+                </ul>
+
+                <h5>🔸 Types of Templates</h5>
+
+                <h6>1. Function Template</h6>
+                <ul>
+                <li>Generic function that works with different data types.</li>
+                <li><strong>Example:</strong>
+        <pre><code>template &lt;typename T&gt;
+        T add(T a, T b) {
+        return a + b;
+        }
+
+        // Usage:
+        cout &lt;&lt; add&lt;int&gt;(3, 4);   // 7
+        cout &lt;&lt; add&lt;float&gt;(3.5, 2.5); // 6.0</code></pre>
+                </li>
+                </ul>
+
+                <h6>2. Class Template</h6>
+                <ul>
+                <li>Used to create a class that can handle multiple data types.</li>
+                <li><strong>Example:</strong>
+        <pre><code>template &lt;class T&gt;
+        class Box {
+        T value;
+        public:
+        void set(T v) { value = v; }
+        T get() { return value; }
+        };
+
+        // Usage:
+        Box&lt;int&gt; intBox;
+        intBox.set(100);
+        cout &lt;&lt; intBox.get();</code></pre>
+                </li>
+                </ul>
+
+                <hr>
+                <p class="text-muted"><strong>Tip:</strong> Templates increase code reusability and reduce redundancy in logic.</p>
+            </div>
+            <div class="modal-footer d-flex justify-content-between align-items-center">
+                <a target="_blank" href="https://docs.google.com/presentation/d/1gxD7pr6odMRb80LAIgYkv7VN66G3dF3RIiW_uQ95D3k/edit?slide=id.gd431007ba2_0_215#slide=id.gd431007ba2_0_215" class="btn btn-outline-info btn-sm">Resource by RNW</a>
+                <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Day 35 -->
+    <div class="modal fade" id="modalDay35Vector" tabindex="-1" aria-labelledby="modalDay35VectorLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content my-bg-black my-text-body card-border">
+            <div class="modal-header">
+                <h5 class="modal-title text-warning" id="modalDay35VectorLabel">Day 35: 🧺 Vectors and Array Comparison</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>📦 What is a Vector?</h5>
+                <ul>
+                <li>Vectors are dynamic arrays in C++ (part of STL).</li>
+                <li>They automatically manage memory and can grow/shrink at runtime.</li>
+                </ul>
+
+                <h6>🧾 Syntax & Example</h6>
+        <pre><code>#include &lt;vector&gt;
+        #include &lt;iostream&gt;
+        using namespace std;
+
+        vector&lt;int&gt; v = {1, 2, 3};
+        v.push_back(4);</code></pre>
+
+                <h5>🔧 Vector Methods</h5>
+                <ul>
+                <li><code>push_back(val)</code> – adds element at end</li>
+                <li><code>pop_back()</code> – removes last element</li>
+                <li><code>insert(it, val)</code> – inserts at position</li>
+                <li><code>erase(it)</code> – deletes from position</li>
+                <li><code>clear()</code> – removes all elements</li>
+                <li><code>size()</code> – returns current size</li>
+                <li><code>empty()</code> – checks if vector is empty</li>
+                <li><code>at(i)</code> – returns element at index <code>i</code></li>
+                <li><code>front()</code> / <code>back()</code> – first / last elements</li>
+                <li><code>begin()</code> / <code>end()</code> – iterators to start / end</li>
+                </ul>
+
+                <h5>🔄 Vector vs Array</h5>
+                <table class="table table-sm table-bordered table-dark text-light">
+                <thead><tr><th>Feature</th><th>Array</th><th>Vector</th></tr></thead>
+                <tbody>
+                    <tr><td>Size</td><td>Fixed</td><td>Dynamic</td></tr>
+                    <tr><td>Memory Management</td><td>Manual</td><td>Automatic</td></tr>
+                    <tr><td>STL Support</td><td>No</td><td>Yes</td></tr>
+                    <tr><td>Bounds Check</td><td>No</td><td><code>at()</code> checks</td></tr>
+                    <tr><td>Ease of Use</td><td>Basic</td><td>Flexible & rich</td></tr>
+                </tbody>
+                </table>
+
+                <hr>
+                <p class="text-muted"><strong>Tip:</strong> Always prefer vectors over arrays when working with dynamic or unknown sizes.</p>
+            </div>
+            <div class="modal-footer d-flex justify-content-between align-items-center">
+                <a target="_blank" href="https://docs.google.com/presentation/d/1rhKc7rxDb4K0bC0jNypCEJTBSnOqhx3fRs_migYkV-c/edit?slide=id.gd431007ba2_0_215#slide=id.gd431007ba2_0_215" class="btn btn-outline-info btn-sm">Resource by RNW</a>
+                <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Day 36 -->
+     <div class="modal fade" id="modalDay36VectorQ" tabindex="-1" aria-labelledby="modalDay36VectorQLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content my-bg-black my-text-body card-border">
+            <div class="modal-header">
+                <h5 class="modal-title text-warning" id="modalDay36VectorQLabel">Day 36: 🧠 Vector Exercises</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>📚 Vector Syntax Recap</h5>
+        <pre><code>vector&lt;int&gt; v;              // empty
+        vector&lt;int&gt; v(n);           // size n, all 0
+        vector&lt;int&gt; v(n, 5);        // size n, all 5
+        vector&lt;int&gt; v = {1,2,3};    // initializer list
+        vector&lt;int&gt; v2(v);          // copy
+        vector&lt;int&gt; v3(v.begin(), v.end()); // range
+        </code></pre>
+
+                <hr>
+                <h5>🧩 Exercises</h5>
+
+                <h6>Q1. 🔁 Reverse a Vector</h6>
+        <pre><code>#include &lt;iostream&gt;
+        #include &lt;vector&gt;
+        #include &lt;algorithm&gt;
+        using namespace std;
+
+        int main() {
+        vector&lt;int&gt; v = {1, 2, 3, 4, 5};
+        reverse(v.begin(), v.end());
+
+        for (int x : v) cout &lt;&lt; x &lt;&lt; " ";
+        return 0;
+        }</code></pre>
+
+                <h6>Q2. 🧮 NxN Matrix using Vector</h6>
+        <pre><code>#include &lt;iostream&gt;
+        #include &lt;vector&gt;
+        using namespace std;
+
+        int main() {
+        int n;
+        cout &lt;&lt; "Enter N: ";
+        cin &gt;&gt; n;
+        vector&lt;vector&lt;int&gt;&gt; matrix(n, vector&lt;int&gt;(n));
+
+        int val = 1;
+        for (int i = 0; i &lt; n; ++i)
+            for (int j = 0; j &lt; n; ++j)
+            matrix[i][j] = val++;
+
+        for (auto row : matrix) {
+            for (int num : row) cout &lt;&lt; num &lt;&lt; " ";
+            cout &lt;&lt; endl;
+        }
+
+        return 0;
+        }</code></pre>
+
+                <h6>Q3. 📉 Elements Smaller Than Neighbours</h6>
+        <pre><code>#include &lt;iostream&gt;
+        #include &lt;vector&gt;
+        using namespace std;
+
+        vector&lt;int&gt; getSmallerElements(const vector&lt;int&gt;&amp; v) {
+        vector&lt;int&gt; result;
+        for (int i = 1; i &lt; v.size() - 1; ++i)
+            if (v[i] &lt; v[i-1] &amp;&amp; v[i] &lt; v[i+1])
+            result.push_back(v[i]);
+        return result;
+        }
+
+        int main() {
+        vector&lt;int&gt; v = {4, 1, 3, 5, 2, 6};
+        vector&lt;int&gt; res = getSmallerElements(v);
+
+        for (int x : res) cout &lt;&lt; x &lt;&lt; " ";
+        return 0;
+        }</code></pre>
+
+                <hr>
+                <p class="text-muted"><strong>Tip:</strong> Mastering 2D vectors and iterators is a huge boost for solving grid-based problems later.</p>
+            </div>
+            <div class="modal-footer d-flex justify-content-between align-items-center">
+                <a target="_blank" href="https://docs.google.com/presentation/d/1n6kWYl-S7UjmPfsUCB6pbAXaXVjzDifm5Bu_od7Mo_M/edit?slide=id.gd431007ba2_0_215#slide=id.gd431007ba2_0_215" class="btn btn-outline-info btn-sm">Resource by RNW</a>
+                <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
