@@ -60,7 +60,9 @@
             </div>
             <h4 class="text-center my-text-heading fw-bold">Data Structures</h4>
             <div class="text-center mb-3 btn-group d-flex flex-wrap justify-content-center">
-                <button class="btn-1 filter-btn" data-filter="data-structure">🌍 Data Structures Only</button>
+            <button class="btn-1 filter-btn" data-filter="data-structure">🌍 Data Structures Only</button>
+            <button class="btn-1 filter-btn" data-filter="linkedlist"> 🧮 Linked -> List -> NULL</button>
+
             </div>
             <hr>
 
@@ -311,7 +313,7 @@
                     </div>
                     <!-- Day 35 Entry -->
                     <div class="col-md-6 col-lg-4 mb-3">
-                        <div class="dsa-entry card my-bg-black my-text-body card-border p-3 h-100" data-topic="vectors cpp" data-difficulty="easy" data-day="35">
+                        <div class="dsa-entry card my-bg-black my-text-body card-border p-3 h-100" data-topic="vectors cpp" data-difficulty="medium" data-day="35">
                             <h3 class="text-warning">Day 35: 🧺 Vectors & Arrays</h3>
                             <p>Understand C++ vectors, their methods, and how they differ from arrays.</p>
                             <button class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay35Vector">📘 Show More</button>
@@ -326,6 +328,25 @@
                         </div>
                     </div>
                     <!-- Day 37 Entry -->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="dsa-entry card my-bg-black my-text-body card-border p-3 h-100" data-topic="data-structure linkedlist cpp" data-difficulty="hard" data-day="37">
+                            <h3 class="text-danger">Day 37: 🔗 Linked List & Its Operations</h3>
+                            <p>Introduction to Linked List, types of linked lists, and core operations such as insertion, deletion, and traversal.</p>
+                            <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay37LinkedList">📘 Show More</button>
+                        </div>
+                    </div>
+                    <!-- Day 98 Entry -->
+                     <!-- Day 38 -->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="dsa-entry card my-bg-black my-text-body card-border p-3 h-100" data-topic="data-structure linkedlist cpp" data-difficulty="hard" data-day="38">
+                            <h3 class="text-danger">Day 38: 🔁 Creation of Singly Linked List</h3>
+                            <p>Step-by-step creation of singly linked list using self-referential class in C++. Node representation, structure, and problem of multiple pointers.</p>
+                            <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalDay38SinglyLL">📘 Show More</button>
+                        </div>
+                    </div>
+
+
+
 
 
 
@@ -1691,6 +1712,157 @@ cout << Counter::getCount();  // Output: 2
             </div>
         </div>
     </div>
+    <!-- Modal Day 37 -->
+    <div class="modal fade" id="modalDay37LinkedList" tabindex="-1" aria-labelledby="modalDay37LinkedListLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content my-bg-black my-text-body card-border">
+            <div class="modal-header">
+                <h5 class="modal-title text-danger" id="modalDay37LinkedListLabel">Day 37: 🔗 Linked List & Its Operations</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>📌 What is a Linked List?</h5>
+                <ul>
+                    <li>A Linked List is a linear data structure where elements (nodes) are stored in memory using pointers.</li>
+                    <li>Each node contains:
+                        <ul>
+                            <li><code>data</code>: the actual value</li>
+                            <li><code>next</code>: pointer to the next node</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h6>🔧 Structure of a Node</h6>
+<pre><code>struct Node {
+    int data;
+    Node* next;
+};</code></pre>
+
+                <h6>✅ Advantages</h6>
+                <ul>
+                    <li>Dynamic size (no fixed limit)</li>
+                    <li>Efficient insertions/deletions</li>
+                </ul>
+
+                <h6>❌ Disadvantages</h6>
+                <ul>
+                    <li>Sequential access only (no direct indexing)</li>
+                    <li>Extra memory for pointers</li>
+                </ul>
+
+                <hr>
+
+                <h5>🔁 Types of Linked List</h5>
+                <ul>
+                    <li><strong>Singly Linked List</strong>: One pointer to next node only</li>
+                    <li><strong>Doubly Linked List</strong>: Two pointers (next and previous)</li>
+                    <li><strong>Circular Linked List</strong>: Last node points back to the head</li>
+                    <li><strong>Circular Doubly Linked List</strong>: Combines both</li>
+                </ul>
+
+                <hr>
+
+                <h5>⚙️ Operations in Linked List</h5>
+
+                <h6>📥 Insertion</h6>
+<pre><code>void insertAtFront(Node*& head, int value) {
+    Node* newNode = new Node{value, head};
+    head = newNode;
+}</code></pre>
+
+                <h6>🗑️ Deletion</h6>
+<pre><code>void deleteFront(Node*& head) {
+    if (head) {
+        Node* temp = head;
+        head = head->next;
+        delete temp;
+    }
+}</code></pre>
+
+                <h6>🔍 Traversal</h6>
+<pre><code>void printList(Node* head) {
+    while (head) {
+        cout &lt;&lt; head-&gt;data &lt;&lt; " ";
+        head = head-&gt;next;
+    }
+}</code></pre>
+
+                <h6>🔎 Searching</h6>
+<pre><code>bool search(Node* head, int key) {
+    while (head) {
+        if (head-&gt;data == key) return true;
+        head = head-&gt;next;
+    }
+    return false;
+}</code></pre>
+
+                <hr>
+                <p class="text-muted"><strong>Tip:</strong> Mastering node manipulation helps in understanding dynamic structures and problem-solving in interviews.</p>
+            </div>
+            <div class="modal-footer d-flex justify-content-between align-items-center">
+                <a target="_blank" href="https://docs.google.com/presentation/d/1EyepxIQAZo7gWVMVo-a47rTAlURHuK97T2vUdddbgG4/edit?slide=id.gd431007ba2_0_215#slide=id.gd431007ba2_0_215" class="btn btn-outline-info btn-sm">Resource by RNW</a>
+                <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Modal Day 38 -->
+     <div class="modal fade" id="modalDay38SinglyLL" tabindex="-1" aria-labelledby="modalDay38SinglyLLLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content my-bg-black my-text-body card-border">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDay38SinglyLLLabel">Day 38: 🔁 Creation of Singly Linked List</h5>
+      </div>
+      <div class="modal-body">
+        <pre><code>
+// ✅ 1) Singly Linked List:
+- Definition:
+  A singly linked list is a linear data structure where each element (node) points to the next.
+
+- Node:
+  A structure containing:
+    - `data`: value stored in the node
+    - `next`: pointer to the next node
+
+- Structure:
+  class Node {
+      public:
+          int data;
+          Node* next;
+  };
+
+- Example:
+  Node* first = new Node();
+  first->data = 10;
+  first->next = NULL;
+
+- Step-by-step creation:
+  • Create 1st node → assign data → next = NULL
+  • Create 2nd node using separate pointer → link first->next = second
+  • Create 3rd node → link second->next = third
+  (and so on...)
+
+- Node Representation:
+  [data | next] → [data | next] → NULL
+
+- Problem:
+  ❗ Using separate pointer for each node becomes impractical for large numbers (e.g., 20+ nodes).
+  ❗ Better solution: use loops or dynamic techniques (e.g., using tail pointers or classes with methods).
+
+// 🚀 Summary:
+- Self-referential class allows dynamic node creation.
+- Demonstrates importance of proper memory management in linked lists.
+- Sets the stage for implementing insertion/deletion using loops.
+        </code></pre>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <a target="_blank" href="https://docs.google.com/presentation/d/1FTLQmVf6q_6XXBvceZJpM2wEh2uVej3FHrqBddnCxzA/edit?slide=id.gd431007ba2_0_215#slide=id.gd431007ba2_0_215" class="btn btn-outline-info btn-sm">📘 Resource by RNW</a>
+        <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+
 
 
 
